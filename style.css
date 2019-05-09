@@ -12,7 +12,8 @@
 @media(max-width: 375px){
 	.contact{
 		width: 100vw;
-		height: 115vh;
+		height: 200vh;
+		flex-flow: column wrap;
 	}
 }
 .contactAddress__actions{
@@ -21,23 +22,47 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding:10vh;
+	z-index: 1;
 }
 @media(max-width: 375px){
 	.contactAddress__actions{
 		width: 70vw;
+		height: 20vh;
 		padding: 1vh;
 	}
 }
 .contactAddress__actionsTitle, .contactAddress__emailTitle, .contactCris__infoTitle{
 	display: flex;
-	font-size: 25;
+	font-size: 25px;
 	font-weight: 100;
-	padding-bottom: 2vh;
 	color: white;
 	font-family: 'Anton', sans-serif;
+	z-index: 1;
+}
+@media(max-width: 375px){
+	.contactAddress__actionsTitle{
+		width: 100vw;
+		height: 10vh;
+		display: flex;
+		font-size: 22px;
+	}
+}
+@media(max-width: 375px){
+	.contactAddress__email{
+		width: 100vw;
+		height: 20vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 1px;
+	}
+	.contactAddress__emailTitle{
+		display: flex;
+		font-size: 20px;
+	}
 }
 .contactAddress__emailTitle{
-	padding-top:3vh;
+	padding-top:1vh;
 }
 .contactAddress__actionsContent, .contactAddress__emailNumber, .contactAddress__emailAddress, .contactCris__infoContent{
 	width: 28vw;
@@ -48,9 +73,19 @@
 	font-weight: 10;
 	font-family: arial;
 	padding-bottom: 3vh;
+	z-index: 1;
+}
+@media(max-width: 375px){
+	.contactAddress__actionsContent{
+		width: 100vw;
+		height: 10vh;
+		font-size: 14px;
+		margin: 2vh;
+	}
 }
 .contactAddress__emailAddress{
 	padding-top: 4vh;
+	z-index: 1;
 }
 .contactAddress__email{
 	width: 23vw;
@@ -58,21 +93,28 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10vh;
+	z-index: 1;
 }
 .contactBackground{
 	width: 100%;
-	height: 510px;
+	height: 535px;
 	position: absolute;
 	top: 100px;
 	margin-top: -100px;
 	opacity: 0.1;
 }
-.contactCrisimg{
+.contactCris__img{
 	width: 300px;
 	height: 500px;
 	position: absolute;
 	left: 70vh;
 	bottom: 20vh;
+}
+@media(max-width: 375px){
+	.contactCris__img{
+		width: 130px;
+		height: 200px;
+	}
 }
 .contactCris{
 	width: 100%;
@@ -81,4 +123,5 @@
 	flex-wrap:wrap;
 	align-items: flex-end;
 	justify-content: flex-end;
+	z-index: 1;
 }
