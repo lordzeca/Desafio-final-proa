@@ -4,10 +4,13 @@
 	box-sizing: content-box;
 }
 .contact{
-	width: 100vw;
+	width: 100%;
 	height: 80vh;
 	display: flex;
 	background-color: #69B284;
+}
+.contactAddress{
+	width: 100%;
 }
 @media(max-width: 375px){
 	.contact{
@@ -26,13 +29,14 @@
 }
 @media(max-width: 375px){
 	.contactAddress__actions{
-		width: 70vw;
+		width: 100vw;
 		height: 20vh;
 		padding: 1vh;
 	}
 }
 .contactAddress__actionsTitle, .contactAddress__emailTitle, .contactCris__infoTitle{
 	display: flex;
+	text-transform: uppercase;
 	font-size: 25px;
 	font-weight: 100;
 	color: white;
@@ -88,11 +92,11 @@
 	z-index: 1;
 }
 .contactAddress__email{
-	width: 23vw;
+	/*width: 23vw;*/
 	height: 13vh;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10vh;
+	/*padding: 10vh;*/
 	z-index: 1;
 }
 .contactBackground{
@@ -103,9 +107,18 @@
 	margin-top: -100px;
 	opacity: 0.1;
 }
+@media(max-width: 375px){
+	.contactBackground{
+		/*width:100%;
+		height: 1100px;*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(assets/footer.jpg);
+	}
+}
 .contactCris__img{
-	width: 300px;
-	height: 500px;
+/*	width: 300px;
+	height: 500px;*/
 	position: absolute;
 	left: 70vh;
 	bottom: 20vh;
@@ -114,6 +127,9 @@
 	.contactCris__img{
 		width: 130px;
 		height: 200px;
+		position: absolute;
+		left: -1vh;
+	/*	bottom: -100%;*/
 	}
 }
 .contactCris{
