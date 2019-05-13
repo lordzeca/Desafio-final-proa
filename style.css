@@ -7,7 +7,8 @@
 	width: 100%;
 	height: 80vh;
 	display: flex;
-	background-color: #69B284;
+	background-size: cover;
+	background-image: url(assets/footer.jpg);
 }
 .contactAddress{
 	width: 100%;
@@ -15,7 +16,7 @@
 @media(max-width: 375px){
 	.contact{
 		width: 100vw;
-		height: 200vh;
+		height: 900px;
 		flex-flow: column wrap;
 	}
 }
@@ -24,14 +25,15 @@
 	height: 13vh;
 	display: flex;
 	flex-wrap: wrap;
-	padding:10vh;
+	padding: 65px;
 	z-index: 1;
 }
 @media(max-width: 375px){
 	.contactAddress__actions{
 		width: 100vw;
 		height: 20vh;
-		padding: 1vh;
+		display: flex;
+		padding: 0px;
 	}
 }
 .contactAddress__actionsTitle, .contactAddress__emailTitle, .contactCris__infoTitle{
@@ -46,23 +48,10 @@
 @media(max-width: 375px){
 	.contactAddress__actionsTitle{
 		width: 100vw;
-		height: 10vh;
+		height: 5vh;
 		display: flex;
-		font-size: 22px;
-	}
-}
-@media(max-width: 375px){
-	.contactAddress__email{
-		width: 100vw;
-		height: 20vh;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		margin: 1px;
-	}
-	.contactAddress__emailTitle{
-		display: flex;
-		font-size: 20px;
+		flex-direction: column;
+		font-size: 25px;
 	}
 }
 .contactAddress__emailTitle{
@@ -82,54 +71,60 @@
 @media(max-width: 375px){
 	.contactAddress__actionsContent{
 		width: 100vw;
-		height: 10vh;
-		font-size: 14px;
-		margin: 2vh;
+		height: 5vh;
+		display: flex;
+		padding-top: 70px;
+		font-size: 15px;
 	}
 }
-.contactAddress__emailAddress{
-	padding-top: 4vh;
-	z-index: 1;
+@media(max-width: 375px){
+	.contactAddress__emailAddress{
+		width: 100vw;
+		height: 5vh;
+	}
 }
 .contactAddress__email{
-	/*width: 23vw;*/
+	width: 30vw;
 	height: 13vh;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	/*padding: 10vh;*/
-	z-index: 1;
-}
-.contactBackground{
-	width: 100%;
-	height: 535px;
-	position: absolute;
-	top: 100px;
-	margin-top: -100px;
-	opacity: 0.1;
+	padding-top: 40px;
+	margin: 60px;
 }
 @media(max-width: 375px){
-	.contactBackground{
-		/*width:100%;
-		height: 1100px;*/
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-image: url(assets/footer.jpg);
+	.contactAddress__email{
+		width: 100vw;
+		height: 30vh;
+		margin: 0px;
+	}
+	.contactAddress__emailTitle{
+		width: 100vw;
+		height: 10vh;
+		display: flex;
+		font-size: 20px;
+		padding-top: 50px;
 	}
 }
-.contactCris__img{
-/*	width: 300px;
-	height: 500px;*/
+.contactImg{
+	width: 100vw;
+	height: 335px;
+}
+.contactCrisimg{
+	width: 300px;
+	height: 500px;
 	position: absolute;
-	left: 70vh;
+	left: 63vh;
 	bottom: 20vh;
+	z-index: 1;
 }
 @media(max-width: 375px){
-	.contactCris__img{
+	.contactCrisimg{
 		width: 130px;
 		height: 200px;
 		position: absolute;
-		left: -1vh;
-	/*	bottom: -100%;*/
+		right: -1vh;
+		bottom: 100%;
 	}
 }
 .contactCris{
@@ -140,4 +135,13 @@
 	align-items: flex-end;
 	justify-content: flex-end;
 	z-index: 1;
+}
+@media{
+	.contactCris__infoTitle{
+		width: 100vw;
+		height: 20vh;
+		display: flex;
+		justify-content: flex-end;
+		font-size: 15px;
+	}
 }
