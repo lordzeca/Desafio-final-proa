@@ -91,9 +91,9 @@
 	color: #fff;
 	text-transform: uppercase;
 }
-@media (max-width: 425px){
+@media (max-width: 736px){
 	.firstTitle{
-		width: 73vw;
+		width: 50vw;
 		font-size: 30px;
 	}
 }
@@ -133,6 +133,12 @@
 	font-size: 16px;
 	align-self: center;
 	font-size: 17px;
+}
+@media(max-width: 425px){
+	.proaHistory__paragraph{
+		font-size: 15px;
+		padding-bottom: 15px;
+	}
 }
 @media (max-width: 768px){
 	.proaHistory__paragraph{
@@ -260,6 +266,7 @@
 	text-align: center;
 	align-self: center;
 	margin-bottom: 15px;
+	margin-top: 15px;
 }
 .proamediaInfo__paragraph{
 	font-size: 18px;
@@ -289,11 +296,12 @@
 }
 .contact{
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 	display: flex;
+	margin-top: 10px;
 	position: relative;
 	background-size: cover;
-	background-image: url(assets/footer.jpg);	
+	background-image: url(assets/footer.jpg);
 }
 .contact:after{
 	content: "";
@@ -325,9 +333,10 @@
 }
 @media(max-width: 425px){
 	.contactAddress__actions{
-		width: 100vw;
+		width: 90vw;
 		height: 20vh;
 		padding: 0px;
+		margin: 10px;
 	}
 }
 .contactAddress__actionsTitle, .contactAddress__emailTitle, .contactCris__infoTitle{
@@ -352,7 +361,7 @@
 	width: 28vw;
 	height: 5vh;
 	display: flex;
-	font-size: 20px;
+	font-size: 17px;
 	color: white;
 	font-weight: 10;
 	font-family: arial;
@@ -389,9 +398,10 @@
 }
 @media(max-width: 425px){
 	.contactAddress__email{
-		width: 100vw;
+		width: 90vw;
 		height: 30vh;
 		margin: 0px;
+		padding-left: 10px;
 	}
 	.contactAddress__emailTitle{
 		width: 100vw;
@@ -405,7 +415,7 @@
 	.contactAddress__email{
 		width: 40vw;
 		height: 25vh;
-		padding-top: 60px;
+		padding-top: 80px;
 	}
 }
 @media(max-width: 768px){
@@ -417,9 +427,12 @@
 	.contactAddress__emailAddress{
 		font-size: 15px;
 	}
+}
+@media(max-width: 768px){
 	.contactAddress__emailNumber{
 		font-size: 15px;
 	}
+
 }
 .contactImg{
 	width: 275px;
