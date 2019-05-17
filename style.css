@@ -316,29 +316,22 @@
 		height: 700px;
 	}
 }
-.contactAddress{
-	width: 100%;
-}
 .contactAddress__actions{
 	width: 30vw;
 	height: 13vh;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 65px;
-	z-index: 1;
 }
 @media(max-width: 425px){
 	.contactAddress__actions{
 		width: 100vw;
 		height: 20vh;
-		display: flex;
 		padding: 0px;
 	}
 }
 .contactAddress__actionsTitle, .contactAddress__emailTitle, .contactCris__infoTitle{
-	display: flex;
 	text-transform: uppercase;
-	font-size: 25px;
 	font-weight: 100;
 	color: white;
 	font-family: 'Anton', sans-serif;
@@ -348,9 +341,6 @@
 	.contactAddress__actionsTitle{
 		width: 100vw;
 		height: 5vh;
-		display: flex;
-		flex-direction: column;
-		font-size: 25px;
 	}
 }
 @media(min-width: 768px){
@@ -393,7 +383,6 @@
 	width: 30vw;
 	height: 13vh;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	padding-top: 40px;
 	margin: 60px;
@@ -459,18 +448,14 @@
 	width: 100%;
 	height: 70vh;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: flex-end;
 	justify-content: flex-end;
 	z-index: 1;
-	padding-bottom: ;
 }
 @media(max-width: 425px){
 	.contactCris{
 		width: 100vw;
 		height: 300px;
-		display: flex;
-		justify-content: flex-end;
 	}
 }
 @media(min-width: 768px){
@@ -486,7 +471,6 @@
 	.contactCris__infoTitle{
 		width: 75vw;
 		height: 40px;
-		display: flex;
 		align-items: center;
 		font-size: 13px;
 	}
@@ -499,15 +483,12 @@
 .contactCris__infoContent{
 	width: 23vw;
 	height: 17vh;
-	display: flex;
-	align-items: flex-end;
 }
 @media(max-width: 425px){
 	.contactCris__infoContent{
 		width: 100%;
 		height: 10vh;
 		justify-content: flex-end;
-		flex-wrap: wrap;
 	}
 }
 @media(min-width: 768px){
@@ -519,8 +500,6 @@
 	.contactCris__infoContent--text{
 		width: 50vw;
 		height: 13vh;
-		display: flex;
-		justify-content: flex-end;
 		font-size: 15px;
 	}
 }
