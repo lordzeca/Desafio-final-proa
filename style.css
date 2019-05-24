@@ -442,19 +442,19 @@
 	bottom: 0vh;
 	z-index: 1;
 }
+@media(max-width: 768px){
+	.contactImg{
+		width: 205px;
+		height: 345px;
+		left: 45%;
+	}
+}
 @media(max-width: 425px){
 	.contactImg{
 		width: 150px;
 		height: 260px;
 		position: absolute;
 		left: 1px;
-	}
-}
-@media(width: 768px){
-	.contactImg{
-		width: 205px;
-		height: 345px;
-		left: 350px;
 	}
 }
 .contactCris{
