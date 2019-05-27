@@ -52,7 +52,7 @@
 
 @media (max-width: 478px) {
 	.startMenu__link {
-		margin: 0.3em; 
+		margin: 0.5em; 
 	}
 }
 
@@ -143,6 +143,7 @@
 @media (max-width: 768px){
 	.proaHistory__paragraph{
 		width: 80%;
+		padding-bottom: 15px;
 	}
 }
 .proaImages{
@@ -331,6 +332,11 @@
 	flex-wrap: wrap;
 	padding: 65px;
 }
+@media(max-width: 768px){
+	.contactAddress__actions{
+		width: 55vw;
+	}
+}
 @media(max-width: 425px){
 	.contactAddress__actions{
 		width: 90vw;
@@ -368,6 +374,12 @@
 	padding-bottom: 3vh;
 	z-index: 1;
 }
+@media(max-width: 768px){
+	.contactAddress__actionsContent{
+		width: 45vw;
+		font-size: 15px;
+	}
+}
 @media(max-width: 425px){
 	.contactAddress__actionsContent{
 		width: 100vw;
@@ -377,11 +389,7 @@
 		font-size: 15px;
 	}
 }
-@media(max-width: 768px){
-	.contactAddress__actionsContent{
-		font-size: 15px;
-	}
-}
+
 @media(max-width: 425px){
 	.contactAddress__emailAddress{
 		width: 100vw;
@@ -395,6 +403,13 @@
 	flex-wrap: wrap;
 	padding-top: 40px;
 	margin: 60px;
+}
+@media(max-width: 768px){
+	.contactAddress__email{
+		width: 50vw;
+		height: 25vh;
+		padding-top: 60px;
+	}
 }
 @media(max-width: 425px){
 	.contactAddress__email{
@@ -411,15 +426,10 @@
 		padding-top: 50px;
 	}
 }
-@media(min-width: 768px){
-	.contactAddress__email{
-		width: 40vw;
-		height: 25vh;
-		padding-top: 80px;
-	}
-}
+
 @media(max-width: 768px){
 	.contactAddress__emailTitle{
+		width: 60vh;
 		font-size: 20px;
 	}
 }
@@ -444,8 +454,8 @@
 }
 @media(max-width: 768px){
 	.contactImg{
-		width: 205px;
-		height: 345px;
+		width: 150px;
+		height: 310px;
 		left: 45%;
 	}
 }
@@ -459,16 +469,23 @@
 }
 .contactCris{
 	width: 100%;
-	height: 70vh;
+	height: 83vh;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 	z-index: 1;
 }
+@media(max-width: 768px){
+	.contactCris{
+		width: 15%;
+		height: 110vh;
+		align-items: flex-end;
+	}
+}
 @media(max-width: 425px){
 	.contactCris{
-		width: 100vw;
-		height: 300px;
+		width: 0vw;
+		height: 125vh;
 	}
 }
 @media(min-width: 768px){
@@ -518,6 +535,6 @@
 }
 @media(min-width: 768px){
 	.contactCris__infoContent--text{
-		font-size: 15px;
+		width: 16vw;
 	}
 }
