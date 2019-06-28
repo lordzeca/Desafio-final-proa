@@ -485,7 +485,6 @@
 @media(max-width: 425px){
 	.contactCris{
 		width: 0vw;
-		height: 125vh;
 	}
 }
 @media(min-width: 768px){
